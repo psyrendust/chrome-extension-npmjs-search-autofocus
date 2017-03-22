@@ -14,6 +14,12 @@ yarn install
 yarn test
 ```
 
+## Create crx bundle
+
+```sh
+yarn bundle
+```
+
 ## Generate releases
 
 * patch release
