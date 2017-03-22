@@ -1,6 +1,6 @@
 {
   "name": "chrome-extension-npmjs-search-autofocus",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "Chrome extension that will autofocus the search field for npmjs on page load, because I just want to search.",
   "scripts": {
