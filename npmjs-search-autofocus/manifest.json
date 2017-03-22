@@ -1,7 +1,7 @@
 {
   "name": "__MSG_appName__",
   "short_name": "__MSG_appName__",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "psyrendust",
   "description": "__MSG_appDesc__",
   "homepage_url": "https://github.com/psyrendust/chrome-extension-npmjs-search-autofocus",
