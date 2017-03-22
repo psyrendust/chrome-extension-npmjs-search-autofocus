@@ -5,6 +5,7 @@ const path = require('path');
 const pkg = require('../package.json');
 const semver = require('semver');
 
+const name = 'npmjs-search-autofocus';
 const level = process.argv.slice(2)[0];
 const version = semver.inc(pkg.version, level);
 
@@ -16,7 +17,7 @@ function exec(command, extraEnv) {
 }
 
 function bumpManifest() {
-  const manifestPath = path.join(__dirname, '../', 'npmjs-search-autofocus', 'manifest.json');
+  const manifestPath = path.join(__dirname, '../', name, 'manifest.json');
 
 
   const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
@@ -28,5 +29,6 @@ function bumpManifest() {
 exec('git checkout develop');
 bumpManifest();
 exec('yarn bundle');
+exec(`zip -r ./dist/${name}.zip ${name}`)
 exec('git add -A');
 exec(`git commit -m "chore(bundle): ${version}"`);
