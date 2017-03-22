@@ -5,7 +5,6 @@
   "description": "Chrome extension that will autofocus the search field for npmjs on page load, because I just want to search.",
   "scripts": {
     "bundle": "gulp bundle",
-    "postinstall": "yarn bundle",
     "prerelease:major": "./bin/releaseprep.js major",
     "release:major": "githubrelease -tb major",
     "prerelease:minor": "./bin/releaseprep.js minor",
