@@ -1,0 +1,36 @@
+{
+  "name": "chrome-extension-npmjs-search-autofocus",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Chrome extension that will autofocus the search field for npmjs on page load, because I just want to search.",
+  "scripts": {
+    "bundle": "gulp bundle",
+    "postinstall": "yarn bundle",
+    "prerelease:major": "./bin/releaseprep.js major",
+    "release:major": "githubrelease -tb major",
+    "prerelease:minor": "./bin/releaseprep.js minor",
+    "release:minor": "githubrelease -tb minor",
+    "prerelease:patch": "./bin/releaseprep.js patch",
+    "release:patch": "githubrelease -tb patch",
+    "test": "eslint */src/**/*.js"
+  },
+  "repository": "psyrendust/chrome-extension-npmjs-search-autofocus",
+  "author": "Larry Gordon <lgordon@psyrendust.com>",
+  "license": "MIT",
+  "bugs": "https://github.com/psyrendust/chrome-extension-npmjs-search-autofocus/issues",
+  "homepage": "https://github.com/psyrendust/chrome-extension-npmjs-search-autofocus#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.2.0",
+    "eslint": "^3.18.0"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "githubrelease": "^0.5.1",
+    "gulp": "^3.9.1",
+    "gulp-crx-pack": "^1.0.1",
+    "semver": "^5.3.0"
+  }
+}

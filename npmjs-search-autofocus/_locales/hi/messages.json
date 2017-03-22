@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "App description.",
+      "message": "Autofocus the search field for npmjs on page load, because I just want to search."
+   },
+   "appName": {
+      "description": "App name.",
+      "message": "npmjs search autofocus"
+   }
+}
