@@ -6,11 +6,11 @@
   "scripts": {
     "bundle": "gulp bundle",
     "prerelease:major": "./bin/releaseprep.js major",
-    "release:major": "githubrelease -tb major",
+    "release:major": "githubrelease -tb major -C yarn",
     "prerelease:minor": "./bin/releaseprep.js minor",
-    "release:minor": "githubrelease -tb minor",
+    "release:minor": "githubrelease -tb minor -C yarn",
     "prerelease:patch": "./bin/releaseprep.js patch",
-    "release:patch": "githubrelease -tb patch",
+    "release:patch": "githubrelease -tb patch -C yarn",
     "test": "eslint */src/**/*.js"
   },
   "repository": "psyrendust/chrome-extension-npmjs-search-autofocus",
