@@ -1,3 +1,27 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/psyrendust/chrome-extension-npmjs-search-autofocus/compare/v0.3.0...v1.0.0) (2018-12-27)
+
+
+### Bug Fixes
+
+* **inject:** update search input selector query ([d4c400e](https://github.com/psyrendust/chrome-extension-npmjs-search-autofocus/commit/d4c400e))
+
+
+### Chores
+
+* **package:** update dependencies and set Node requirement to LTS ([a07aae3](https://github.com/psyrendust/chrome-extension-npmjs-search-autofocus/commit/a07aae3))
+
+
+### BREAKING CHANGES
+
+* **package:** Updates the npm packages for githubrelease dependencies, which contains
+a breaking change that sets the package's minimum required Node version
+to be the oldest LTS currently supported by the Node Release working
+group. At this time, that is Node 6 (which is in its Maintenance
+LTS phase).
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/psyrendust/chrome-extension-npmjs-search-autofocus/compare/v0.2.0...v0.3.0) (2017-03-22)
 
