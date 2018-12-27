@@ -9,9 +9,15 @@ function readyStateCheck(done) {
   checkState();
 }
 
+function getSearchInput() {
+  return document.getElementById('site-search')
+  || document.querySelector('input[class*="searchInput"]')
+  || document.querySelector('input[placeholder*="Search"]');
+}
+
 chrome.extension.sendMessage({}, () => {
   readyStateCheck(() => {
-    const searchInput = document.getElementById('site-search');
+    const searchInput = getSearchInput();
     if (searchInput) {
       searchInput.focus();
       requestAnimationFrame(() => {
